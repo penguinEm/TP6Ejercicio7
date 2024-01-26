@@ -1,12 +1,16 @@
 import { Container } from "react-bootstrap";
 import EmpleadoLista from "./components/EmpleadoLista";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Container className="main d-flex justify-content-center align-items-center">
+    <Navbar></Navbar>
+      <Container className="main my-3">
         <EmpleadoLista></EmpleadoLista>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

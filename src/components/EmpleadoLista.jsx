@@ -71,13 +71,16 @@ const EmpleadoList = () => {
 
   return (
     <>
-      
-      <ListGroup className="w-50 border border-primary">
-        {
-          empleados.map ((empleado)=><EmpleadoRenglon key={empleado.id} ></EmpleadoRenglon> )
-        }
-
-        
+      <ListGroup className="d-flex justify-content-center align-items-center">
+        {empleados.map((empleado) => (
+          <EmpleadoRenglon
+            key={empleado.id}
+            fullName={empleado.fullName}
+            title={empleado.title}
+            department={empleado.department}
+            pic={empleado.pic}
+          ></EmpleadoRenglon>
+        ))}
       </ListGroup>
     </>
   );

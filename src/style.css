@@ -32,12 +32,18 @@
 }
 
 img {
-  height: 100px;
-  width: 120px; 
-  color:#00fff26e
+  width: 5rem;
+  height: 5rem;
 }
 
-.avatar{
-width: 5rem;
-height: 5rem;
+@media (max-width: 768px) {
+  .anchoLista {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .anchoLista {
+    width: 50%;
+  }
 }

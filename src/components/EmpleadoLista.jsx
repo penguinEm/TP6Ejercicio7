@@ -9,7 +9,7 @@ const EmpleadoList = () => {
       fullName: "Laya Dueñas",
       title: "CEO",
       department: "Business",
-      pic: "public/assets/avat01.png",
+      pic: "/assets/avat01.png",
     },
     {
       id: 2,

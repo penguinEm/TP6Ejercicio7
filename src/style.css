@@ -32,21 +32,18 @@
 }
 
 img {
-  height: 100px;
-  width: 120px; 
-  color:#00fff26e
+  width: 5rem;
+  height: 5rem;
 }
 
-.colorCard {
-  height: 120px;
-  width: 100%;
+@media (max-width: 768px) {
+  .anchoLista {
+    width: 100%;
+  }
 }
 
-.colorInput {
-  height: 200px;
-  width: 200px;
-}
-
-.card {
-  width: "18rem"
+@media (min-width: 769px) {
+  .anchoLista {
+    width: 50%;
+  }
 }

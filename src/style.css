@@ -37,16 +37,7 @@ img {
   color:#00fff26e
 }
 
-.colorCard {
-  height: 120px;
-  width: 100%;
-}
-
-.colorInput {
-  height: 200px;
-  width: 200px;
-}
-
-.card {
-  width: "18rem"
+.avatar{
+width: 5rem;
+height: 5rem;
 }

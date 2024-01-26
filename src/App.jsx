@@ -4,7 +4,7 @@ import EmpleadoLista from "./components/EmpleadoLista";
 function App() {
   return (
     <>
-      <Container className="main">
+      <Container className="main d-flex justify-content-center align-items-center">
         <EmpleadoLista></EmpleadoLista>
       </Container>
     </>

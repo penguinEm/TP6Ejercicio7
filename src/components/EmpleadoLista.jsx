@@ -1,14 +1,83 @@
 import { ListGroup } from "react-bootstrap";
+import EmpleadoRenglon from "./EmpleadoRenglon";
 
 const EmpleadoList = () => {
+  /* Array de objetos empleados ----------------------------- */
+  const empleados = [
+    {
+      id: 1,
+      fullName: "Laya Dueñas",
+      title: "CEO",
+      department: "Business",
+      pic: "./src/assets/avat01.png",
+    },
+    {
+      id: 2,
+      fullName: "Astryd Vallés",
+      title: "CMO",
+      department: "Marketing",
+      pic: "./src/assets/avat02.png",
+    },
+    {
+      id: 3,
+      fullName: "Shantell Meza",
+      title: "CFO",
+      department: "Business",
+      pic: "src/assets/avat03.png",
+    },
+    {
+      id: 4,
+      fullName: "Sergio Ocampo",
+      title: "CTO",
+      department: "Engineering",
+      pic: "src/assets/avat04.png",
+    },
+    {
+      id: 5,
+      fullName: "Ares Jiménez",
+      title: "Art Director",
+      department: "Marketing",
+      pic: "src/assets/avat05.png",
+    },
+    {
+      id: 6,
+      fullName: "Marta Pérez",
+      title: "Frontend Dev",
+      department: "Engineering",
+      pic: "src/assets/avat06.png",
+    },
+    {
+      id: 7,
+      fullName: "Diego Lopez",
+      title: "Digital Strategist",
+      department: "Marketing",
+      pic: "src/assets/avat07.png",
+    },
+    {
+      id: 8,
+      fullName: "Carlos Fuentes",
+      title: "Backend Dev",
+      department: "Engineering",
+      pic: "src/assets/avat08.png",
+    },
+    {
+      id: 9,
+      fullName: "Bernard Jung",
+      title: "DevOps Engineer",
+      department: "Engineering",
+      pic: "src/assets/avat09.png",
+    },
+  ];
+
   return (
     <>
-      <ListGroup>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      
+      <ListGroup className="w-50 border border-primary">
+        {
+          empleados.map ((empleado)=><EmpleadoRenglon key={empleado.id} ></EmpleadoRenglon> )
+        }
+
+        
       </ListGroup>
     </>
   );

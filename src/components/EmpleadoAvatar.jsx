@@ -2,8 +2,8 @@
 
 const EmpleadoAvatar = () => {
     return (
-        <div>
-            
+        <div className="avatar border ms-5">
+            {/* Aqui va el avatar */}   
         </div>
     );
 };
